@@ -3,4 +3,4 @@
 	name = antonio
 	email = antferdom@alum.us.es
 [core]
-	editor = vi
+	editor = vim

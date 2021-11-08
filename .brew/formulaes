@@ -1,0 +1,22 @@
+ant			fig2dev			go			jemalloc		libpq			little-cms2		ocaml			protobuf		sundials
+aom			flac			gobject-introspection	jenv			libproxy		llvm			ocaml-zarith		pstoedit		szip
+arpack			fltk			gperftools		jpeg			libpthread-stubs	lua			open-mpi		pyenv			tbb
+assimp			fontconfig		gradle			krb5			librsvg			lua@5.1			openblas		pyqt			tcl-tk
+autoconf		freetype		graphicsmagick		leveldb@1.22		libsmi			luajit			openexr			pyqt@5			texinfo
+automake		fribidi			graphite2		libb2			libsndfile		luajit-openresty	openjdk			python@3.8		tmux
+bash			gcc			groonga			libcerf			libssh			lz4			openjpeg		python@3.9		tree
+bdw-gc			gd			guile			libde265		libtasn1		lzo			openssl@1.1		qhull			unbound
+berkeley-db		gdbm			harfbuzz		libev			libtermkey		m4			opus			qrupdate		unibilium
+brotli			gdk-pixbuf		hdf5			libevent		libtiff			maven			p11-kit			qscintilla2		unrar
+c-ares			geckodriver		heroku			libffi			libtool			mecab			pandoc			qt			utf8proc
+cairo			gettext			heroku-node		libgcrypt		libunistring		mecab-ipadic		pandoc-citeproc		qt@5			vim
+cmake			ghostscript		hugo			libgpg-error		libuv			metis			pango			r			webp
+coq			git			hwloc			libheif			libvorbis		mpdecimal		pcre			readline		wget
+dbus			gl2ps			icu4c			libidn			libvterm		mpfr			pcre2			ruby			x265
+docbook			glib			ilmbase			libidn2			libx11			msgpack			perl			scons			xmlto
+docbook-xsl		glpk			imagemagick		liblqr			libxau			mysql			pipenv			shared-mime-info	xorgproto
+double-conversion	gmp			imath			libmaxminddb		libxcb			ncurses			pixman			sip			xz
+eigen			gnu-getopt		isl			libmpc			libxdmcp		neovim			pkg-config		six			zsh
+entr			gnu-sed			jansson			libogg			libxext			netpbm			plotutils		snappy			zstd
+epstool			gnuplot			jasper			libomp			libxrender		nettle			portaudio		sqlite
+fftw			gnutls			jbig2dec		libpng			libyaml			nghttp2			postgresql@11		suite-sparse

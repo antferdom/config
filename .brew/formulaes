@@ -1,0 +1,2 @@
+ca-certificates	gettext		mpdecimal	pcre2		python@3.10	readline	smartmontools	xz
+gdbm		git		openssl@1.1	pipenv		python@3.9	six		sqlite

@@ -10,4 +10,4 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 alias ls='ls -G'
 alias breww='arch -x86_64 /usr/local/homebrew/bin/brew'
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
-
+alias grep='grep --color=always'

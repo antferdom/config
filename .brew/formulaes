@@ -1,2 +1,17 @@
-ca-certificates	gettext		mpdecimal	pcre2		python@3.10	readline	smartmontools	xz
-gdbm		git		openssl@1.1	pipenv		python@3.9	six		sqlite
+apache-maven-3.8.4
+ca-certificates
+gdbm
+gettext
+git
+go
+mpdecimal
+openssl@1.1
+pcre2
+pipenv
+python@3.10
+python@3.9
+readline
+six
+smartmontools
+sqlite
+xz

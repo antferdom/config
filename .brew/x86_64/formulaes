@@ -1,0 +1,12 @@
+bash
+ca-certificates
+gdb
+gdbm
+gmp
+mpdecimal
+openssl@1.1
+pkg-config
+python@3.10
+readline
+sqlite
+xz

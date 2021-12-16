@@ -1,10 +1,15 @@
 apache-maven-3.8.4
 ca-certificates
+gcc
 gdbm
 gettext
 git
+gmp
 go
+isl
+libmpc
 mpdecimal
+mpfr
 openssl@1.1
 pcre2
 pipenv
@@ -15,3 +20,4 @@ six
 smartmontools
 sqlite
 xz
+zstd

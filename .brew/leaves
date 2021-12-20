@@ -1,6 +1,8 @@
+entr
 gcc
 git
 go
+pandoc
 pipenv
 python@3.9
 smartmontools

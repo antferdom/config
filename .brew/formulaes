@@ -21,5 +21,6 @@ readline
 six
 smartmontools
 sqlite
+wabt
 xz
 zstd

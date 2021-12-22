@@ -2,6 +2,7 @@ entr
 gcc
 git
 go
+node
 pandoc
 pipenv
 python@3.9

@@ -1,4 +1,6 @@
 apache-maven-3.8.4
+brotli
+c-ares
 ca-certificates
 entr
 gcc
@@ -7,10 +9,14 @@ gettext
 git
 gmp
 go
+icu4c
 isl
 libmpc
+libnghttp2
+libuv
 mpdecimal
 mpfr
+node
 openssl@1.1
 pandoc
 pcre2

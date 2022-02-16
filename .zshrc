@@ -1,6 +1,7 @@
 export PATH="/usr/local/homebrew/bin:$PATH" # Brew installed binaries under Rosetta 2 translation
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/python@3.10/libexec/bin:$PATH"
+. "$HOME/.cargo/env"
 
 PS1="%F{57}%n%f@%F{118}%m%f %F{226}%1~%f %#"
 

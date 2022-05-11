@@ -1,8 +1,9 @@
 export PATH="/usr/local/homebrew/bin:$PATH" # Brew installed binaries under Rosetta 2 translation
-export PATH="/opt/homebrew/bin:$PATH"
-export PATH="/opt/homebrew/opt/python@3.10/libexec/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH" # Brew native ARM installed binaries 
+export PATH="/opt/homebrew/opt/python@3.10/libexec/bin:$PATH" 
 . "$HOME/.cargo/env"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
 PS1="%F{57}%n%f@%F{118}%m%f %F{226}%1~%f %#"
 
@@ -17,3 +18,5 @@ alias grep='grep --color=always'
 # gcc aliases
 alias g++="g++-11"
 alias gcc="gcc-11"
+# compilers
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib"

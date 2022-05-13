@@ -10,7 +10,11 @@ PS1="%F{57}%n%f@%F{118}%m%f %F{226}%1~%f %#"
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 # export EDITOR='nvim' temporally disabled
-
+# language environment variables
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+# general aliases
 alias ls='ls -G'
 alias breww='arch -x86_64 /usr/local/homebrew/bin/brew'
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'

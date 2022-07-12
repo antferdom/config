@@ -47,3 +47,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Ruby
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh # auto-switching of Rubies specified by .ruby-version files
+# Gems target directory
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"

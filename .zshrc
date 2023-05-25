@@ -21,8 +21,8 @@ alias breww='arch -x86_64 /usr/local/homebrew/bin/brew'
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 alias grep='grep --color=always'
 # gcc aliases
-alias g++="g++-11"
-alias gcc="gcc-11"
+alias g++="g++-12"
+alias gcc="gcc-12"
 # compilers
 export CC=clang
 export CXX=clang++
@@ -53,3 +53,12 @@ source /opt/homebrew/opt/chruby/share/chruby/auto.sh # auto-switching of Rubies 
 # Gems target directory
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/Users/antonio/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<

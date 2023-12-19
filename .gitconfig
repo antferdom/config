@@ -1,13 +1,1 @@
-# This is Git's per-user configuration file.
-[user]
-	name = antonio
-	email = 47569261+antferdom@users.noreply.github.com 
-[core]
-	editor = vim
-[credential]
-	helper = store
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+/Users/antonio/.gitconfig

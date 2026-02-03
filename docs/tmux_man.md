@@ -1,6 +1,11 @@
 We have update the basic tmux config, in particular, changing the **prefix key** `.tmux.conf`
 
 ```shell
+# Big scrollback
+set-option -g history-limit 50000
+# Mouse support (scroll, select panes, resize)
+set -g mouse on
+
 set -g prefix `
 bind-key ` last-window
 bind-key e send-prefix

@@ -10,3 +10,7 @@ highlight Comment ctermfg=green
 set mouse=a
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
+set laststatus=2
+set statusline+=%F
+set title
+set titlestring=%F

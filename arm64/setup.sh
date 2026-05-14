@@ -27,11 +27,10 @@ echo "Detected NVIDIA GPU device(s):"
 echo "$gpu_info"
 
 # conda installation
-mkdir -p "$HOME/miniconda3"
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O "$HOME/miniconda3/miniconda.sh"
-bash "$HOME/miniconda3/miniconda.sh" -b -u -p "$HOME/miniconda3"
-unlink "$HOME/miniconda3/miniconda.sh"
-source "$HOME/miniconda3/bin/activate"
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
+bash ~/Miniconda3-latest-Linux-aarch64.sh
+unlink ~/Miniconda3-latest-Linux-aarch64.sh
+source ~/.bashrc
 
 # nodejs installation
 NVM_VERSION="${NVM_VERSION:-v0.40.3}"
@@ -47,30 +46,6 @@ curl -fsSL "https://raw.githubusercontent.com/nvm-sh/nvm/${NVM_VERSION}/install.
 \. "$HOME/.nvm/nvm.sh"
 nvm install "$NODE_VERSION"
 nvm alias default "$NODE_VERSION"
-
-# Install Go
-GO_VERSION="${GO_VERSION:-$(curl -fsSL https://go.dev/VERSION?m=text | head -n1)}"
-GO_TARBALL="${GO_VERSION}.linux-amd64.tar.gz"
-GO_URL="https://go.dev/dl/${GO_TARBALL}"
-GO_TMP_TARBALL="$(mktemp -t "${GO_VERSION}.XXXXXX.tar.gz")"
-if [[ "$(uname -m)" != "x86_64" ]]; then
-    echo "ERROR: This script currently supports x86_64 only." >&2
-    exit 1
-fi
-if [[ ! "$GO_VERSION" =~ ^go[0-9]+(\.[0-9]+){1,2}([a-z0-9]+)?$ ]]; then
-    echo "ERROR: GO_VERSION format is invalid: '$GO_VERSION' (expected like go1.25.4)" >&2
-    exit 1
-fi
-curl -fsSL "$GO_URL" -o "$GO_TMP_TARBALL"
-$SUDO rm -rf /usr/local/go
-$SUDO tar -C /usr/local -xzf "$GO_TMP_TARBALL"
-mkdir -p "$HOME/go/bin"
-GO_INSTALLED_VERSION="$("/usr/local/go/bin/go" version | awk '{print $3}')"
-if [[ "$GO_INSTALLED_VERSION" != "$GO_VERSION" ]]; then
-    echo "ERROR: Installed Go version mismatch: expected ${GO_VERSION}, got ${GO_INSTALLED_VERSION}" >&2
-    exit 1
-fi
-echo "Validated Go installation: ${GO_INSTALLED_VERSION}"
 
 # Install Rust and crates
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
